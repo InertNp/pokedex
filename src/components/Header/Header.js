@@ -10,7 +10,7 @@ export function Header() {
     <header className=" container bg-gray-700 h-24 flex flex-row cursor-pointer">
       <HeaderText />
       <div
-        className="  flex justify-center items-center   "
+        className="  flex justify-center items-center mr-2  "
         onClick={handleClick}
       >
         <ButtonPokeBall />
