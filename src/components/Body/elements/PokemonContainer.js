@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightLong } from "@fortawesome/free-solid-svg-icons";
-import { pokemon } from "../../../data/fakedata";
 
-export function PokemonContainer() {
+
+export function PokemonContainer({data}) {
   const handleClicked = () => {
     console.log("clicked");
   };
-  return <Example data={pokemon} clicked={handleClicked} />;
+  return <Example data={data} clicked={handleClicked} />;
 }
 
 function Example({ data, clicked }) {
