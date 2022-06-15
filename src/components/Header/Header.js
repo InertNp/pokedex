@@ -7,7 +7,7 @@ export function Header() {
     console.log("done");
   }
   return (
-    <header className=" container bg-gray-700 h-24 flex flex-row cursor-pointer">
+    <header className="container bg-gray-700 h-24 flex flex-row cursor-pointer">
       <HeaderText />
       <div
         className="  flex justify-center items-center mr-2  "

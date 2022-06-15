@@ -19,6 +19,7 @@ export async function fetchPokemonData(a, b) {
       .then((info) => {
         // console.log(asd.data.types);
         const pokemonDataArray = {
+          dataType: "real",
           id: info.data.id,
           animate: "animate-none",
           name: info.data.name,
@@ -43,19 +44,22 @@ export async function fetchPokemonData(a, b) {
   return fullDataArray;
 }
 
-export const pokemon = [{
-  id: uuid(),
-  animate: "animate-pulse",
-  name: "PokemonName",
-  types: [
-    {
-      id: uuid(),
-      type: "fire",
-    },
-    {
-      id: uuid(),
-      type: "grass",
-    },
-  ],
-  img: egimg,
-}];
+export const pokemon = [
+  {
+    dataType: "fake",
+    id: uuid(),
+    animate: "animate-pulse",
+    name: "Inert",
+    types: [
+      {
+        id: uuid(),
+        type: "normal",
+      },
+      {
+        id: uuid(),
+        type: "normal",
+      },
+    ],
+    img: egimg,
+  },
+];

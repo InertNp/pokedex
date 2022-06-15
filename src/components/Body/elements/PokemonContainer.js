@@ -35,7 +35,7 @@ function Example({ data, clicked }) {
       <div
         className={`h-full w-2/4 flex flex-col items-center justify-center ${data.animate}`}
       >
-        <p className={`font-sans text-2xl font-bold `}>{data.name}</p>
+        <p className={`font-sans text-2xl font-bold capitalize `}>{data.name}</p>
       </div>
       {/* types */}
       <div className=" h-full w-1/4">
