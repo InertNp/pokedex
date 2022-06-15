@@ -1,10 +1,17 @@
 import { Types } from "./Types";
 
-export function PokemonContainer({ data }) {
-  return <Example data={data} clicked={(a) => {console.log('st')}} />;
+export function PokemonContainer({ data, clicked }) {
+  return (
+    <Example
+      data={data}
+      clicked={(a) => {
+        clicked(data.id);
+      }}
+    />
+  );
 }
 
-function Example({ data ,clicked}) {
+function Example({ data, clicked }) {
   const sth = ` ${data.animate} bg-slate-700 hover:bg-slate-600 text-white shadow-lg `;
   return (
     <div
@@ -12,7 +19,9 @@ function Example({ data ,clicked}) {
       flex flex-row justify-start items-center ${sth}
       rounded-xl cursor-pointer
   `}
-      onClick={()=>{'clicked'}}
+      onClick={() => {
+        clicked();
+      }}
     >
       {/* Image */}
       <div className=" w-1/5 m-2 flex items-center">

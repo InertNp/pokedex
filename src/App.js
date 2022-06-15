@@ -3,11 +3,13 @@ import { Header } from "./components/Header/Header";
 
 function App() {
   return (
-    <div className="container ">
+    <div className="container">
       <Header />
       <Main />
     </div>
   );
 }
+
+
 
 export default App;
